@@ -6,7 +6,7 @@ import { getSpacingTop, getSpacingRight, getSpacingBottom, getSpacingLeft,
 
 
 export class BaseComponent {
-  // Margin
+  // Margins
   @Input() ma;
   @Input() mh;
   @Input() mv;
@@ -35,7 +35,7 @@ export class BaseComponent {
     return getSpacingLeft('m', this);
   }
 
-  // Padding
+  // Paddings
   @Input() pa;
   @Input() ph;
   @Input() pv;
