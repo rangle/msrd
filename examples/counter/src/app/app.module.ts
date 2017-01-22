@@ -3,12 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {
-  BlockDirective,
-  ButtonDirective,
-  HeadingDirective,
-  TextDirective,
-} from './directives';
+import { MsrdDirective } from '../../../../src';
 
 @NgModule({
   imports: [
@@ -17,10 +12,7 @@ import {
   ],
   declarations: [
     AppComponent,
-    BlockDirective,
-    ButtonDirective,
-    HeadingDirective,
-    TextDirective,
+    MsrdDirective
   ],
   bootstrap: [ AppComponent ],
 })
