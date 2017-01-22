@@ -1,1 +1,1 @@
-export * from './base.component';
+export * from './msrd.directive';

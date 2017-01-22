@@ -1,11 +1,17 @@
-import { Input, HostBinding } from '@angular/core';
+import { Directive, Input, HostBinding } from '@angular/core';
 import { whitespaceScale, clrs, typeScale, fontWeights, lineHeights,
 } from './config';
 import { getSpacingTop, getSpacingRight, getSpacingBottom, getSpacingLeft,
 } from './utils';
 
-
-export class BaseComponent {
+@Directive({
+  selector: `
+    [ma], [mh], [mv], [mt], [mr], [mb], [ml],
+    [pa], [ph], [pv], [pt], [pr], [pb], [pl],
+    [clr], [bg], [f], [fw], [lh]
+  `
+})
+export class MsrdDirective {
   // Margins
   @Input() ma;
   @Input() mh;
